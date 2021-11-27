@@ -721,7 +721,40 @@ video {
 =================================*/ 
 
 
+footer {
+  border-top: 5px solid #e31d09;
+  background: #000;
+}
 
+footer .wrapper {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .wrapper ul li { margin-right: 15px; }
+
+footer .wrapper ul li a {
+  color: #beb8b8;
+  font-size: 13px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+footer .wrapper ul li a:hover { color: #fff; }
+
+footer .wrapper span {
+  color: #beb8b8;
+  font-size: 13px;
+}
 
 
 

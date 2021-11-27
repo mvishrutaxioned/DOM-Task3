@@ -641,7 +641,76 @@ h2 a:hover {
 
 /* articles list styling ends here */
 
+/* video styling starts here */
 
+
+.video .wrapper {
+  width: 100%;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  outline: none;
+}
+
+.video .wrapper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  opacity: .5;
+}
+
+.video .wrapper i {
+  position: fixed;
+  top: 22%;
+  right: 22%;
+  color: #bebebe;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 40;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.video .wrapper i:hover { color: #000; }
+
+video {
+  width: 50%;
+  position: fixed;
+}
+
+/* .video .wrapper::after {
+  content: "\f00d";
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  font-size: 100px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  transition: .5s ease;
+} */
+
+/* video styling ends here */
 
 /*=================================
   main styling ends here

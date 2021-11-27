@@ -591,7 +591,55 @@ article:nth-of-type(2) { margin-top: 80px; }
 
 /* articles styling ends here */
 
+/* articles list styling starts here */
 
+.articles-list { padding: 30px 0; }
+
+.articles-list ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.articles-list ul li > figure { position: relative; }
+.articles-list ul li > figure img { height: 135px; }
+
+.article-info {
+  height: 300px;
+  overflow: hidden;
+}
+
+.article-info {
+  padding: 18px;
+  background: #fff;
+}
+
+.article-info small { font-size: 12px; }
+.article-info figure { width: 26%; }
+
+.article-info h2 a {
+  margin: 15px 0;
+  color: #498795;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.article-info p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h2 a:hover {
+  color: #072547;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+/* articles list styling ends here */
 
 
 

@@ -483,9 +483,113 @@ nav form div i {
   line-height: 22px;
 }
 
+/* articles styling starts here */
+
+/* articles styling starts here */
+
+.articles,
+.articles-list {
+  background: #f6f6f8;
+  padding: 45px 0;
+}
+
+.articles .wrapper { margin: 45px auto; }
+
+article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+article .article-figure {
+  width: 72%;
+  position: relative;
+}
+
+.articles-list ul li:nth-of-type(2) > figure:after,
+.articles-list ul li:nth-of-type(3) > figure:after,
+article .article-figure:after {
+  content: '\f144';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color:#fff;
+  font-size: 84px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.articles-list ul li:nth-of-type(2) > figure:after,
+.articles-list ul li:nth-of-type(3) > figure:after { font-size: 44px; }
+
+.articles-list ul li:nth-of-type(2) > figure:hover:after,
+.articles-list ul li:nth-of-type(3) > figure:hover:after,
+article .article-figure:hover:after {
+  opacity: .8;
+  cursor: pointer;
+}
+
+article .article-figure img { height: 350px; }
+article:nth-of-type(2) { margin-top: 80px; }
+
+.article-content {
+  width: 50%;
+  height: 310px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 25px;
+  margin-left: -16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background: #fff;
+  z-index: 10;
+}
+
+.article-content small {
+  padding-bottom: 6px;
+  font-size: 12px;
+}
+
+.article-content h2 a {
+  margin: 15px 0;
+  color: #498795;
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.content-figure { width: 25%; }
+
 /* articles styling ends here */
-
-
 
 
 

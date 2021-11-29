@@ -38,4 +38,17 @@ $(document).ready(() => {
             $('html, body').css("overflow", "visible")
         }
     });
+
+    // read more and read less functionality
+    $('.read').each(function (index, elem) {
+        $(this).click(() => {
+           $(this).parent().find('.more').fadeToggle()
+           var read = $(this).parent().find('.read')
+           if(read.text() == 'Read More') {
+               read.text("Read Less")
+           } else {
+            read.text("Read More")
+           }
+        })
+    })
 })

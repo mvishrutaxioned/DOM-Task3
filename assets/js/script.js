@@ -25,4 +25,14 @@ $(document).ready(() => {
         $('video').trigger('pause');
         $('.video .wrapper').fadeOut();
     })
+
+    // close video functionality by clicking outside
+    $(document).mouseup(function(e) {
+        var container = $("video");
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            $('video').trigger('pause');
+            $('.video .wrapper').fadeOut();
+        }
+    });
 })

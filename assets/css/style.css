@@ -618,6 +618,9 @@ article:nth-of-type(2) { margin-top: 80px; }
 
 .article-info small { font-size: 12px; }
 .article-info figure { width: 26%; }
+.read {  font-size: 12px; }
+.read:hover { text-decoration: underline; }
+.more { display: none; }
 
 .article-info h2 a {
   margin: 15px 0;

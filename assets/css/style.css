@@ -646,7 +646,7 @@ h2 a:hover {
 
 .video .wrapper {
   width: 100%;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;

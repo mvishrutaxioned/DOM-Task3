@@ -653,7 +653,7 @@ h2 a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -664,7 +664,7 @@ h2 a:hover {
 
 .video .wrapper::before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -674,10 +674,15 @@ h2 a:hover {
 }
 
 .video .wrapper i {
-  position: fixed;
-  top: 22%;
-  right: 22%;
-  color: #bebebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -25%;
+  right: 0;
+  left: 60%;
+  bottom: 25%;
+  color: #666;
   font-size: 30px;
   cursor: pointer;
   z-index: 40;
@@ -690,7 +695,7 @@ h2 a:hover {
 
 video {
   width: 50%;
-  position: fixed;
+  position: relative;
 }
 
 /* .video .wrapper::after {
@@ -933,6 +938,9 @@ footer .wrapper span {
     grid-template-columns: repeat(2, 1fr); 
   }
 
+  .video .wrapper i { left: 90%; }
+  video { width: 70%; }
+
   footer .wrapper {
     margin: 0 auto;
     -webkit-box-orient: vertical;
@@ -972,6 +980,12 @@ footer .wrapper span {
   .articles-list ul li:nth-of-type(2) > figure:hover:after,
   .articles-list ul li:nth-of-type(3) > figure:hover:after,
   article .article-figure:hover:after { opacity: 1; }
+  video { width: 95%; }
+
+  .video .wrapper i {
+    left: 90%;
+    bottom: 15%;
+  }
 }
 
 /*media query for 320px starts here*/
@@ -982,4 +996,5 @@ footer .wrapper span {
   .articles { margin: 0; }
   article:nth-of-type(2) { margin-top: 30px; }
   .articles-list { padding: 0; }
+  .video .wrapper i { bottom: 5%; }
 }

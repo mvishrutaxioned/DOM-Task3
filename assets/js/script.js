@@ -18,12 +18,14 @@ $(document).ready(() => {
         $('.video .wrapper').fadeIn();
         $('.video .wrapper').css('display', 'flex');
         $('video').trigger('play');
+        $('html, body').css("overflow", "hidden")
     })
 
     // close video functionality
     $('#close-video').click(() => {
         $('video').trigger('pause');
         $('.video .wrapper').fadeOut();
+        $('html, body').css("overflow", "visible")
     })
 
     // close video functionality by clicking outside
@@ -33,6 +35,7 @@ $(document).ready(() => {
         {
             $('video').trigger('pause');
             $('.video .wrapper').fadeOut();
+            $('html, body').css("overflow", "visible")
         }
     });
 })
